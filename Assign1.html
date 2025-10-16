@@ -1,0 +1,242 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechNova Solutions</title>
+
+<style>
+  *{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+/* Table Styling */
+table, th, td {
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 8px;
+  border-collapse: collapse;
+}
+
+/* Grid + Container */
+div.mycontainer {
+  width:100%;
+  overflow:auto;
+}
+div.mycontainer div {
+  width:33%;
+  float:left;
+  grid-column:auto;
+  padding:10px;
+}
+
+/* Layout grid */
+.grid-container {
+  display:grid;
+  grid-template-columns:30% 30% 30%;
+  gap:20px;
+}
+
+/* Section cards */
+.city {
+  background-color:#0066cc;
+  color:white;
+  border:2px solid #003366;
+  margin:20px;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0px 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Header */
+#myHeader {
+  background-color:#0044cc;
+  color:white;
+  padding:50px;
+  text-align:center;
+  border-radius:10px;
+}
+
+/* Body Styling */
+body {
+  font-family:Arial, sans-serif;
+  background-color:#f3f6fa;
+  margin:0;
+  padding:0;
+  line-height:1.6;
+}
+
+/* Headings */
+h1, h2, h3 {
+  margin:10px;
+}
+
+/* Links */
+a {
+  color:#0044cc;
+  text-decoration:none;
+  font-weight:bold;
+}
+a:hover {
+  text-decoration:underline;
+  color:#ff6600;
+}
+
+/* Lists */
+ul, ol {
+  background-color:#ffffff;
+  border-radius:10px;
+  padding:15px;
+  box-shadow:0px 2px 6px rgba(0,0,0,0.05);
+  margin:20px;
+}
+
+/* Paragraphs */
+p {
+  margin:10px 20px;
+  color:#333333;
+}
+
+/* RTL styling example */
+h1[dir="rtl"], bdo[dir="rtl"], h2[dir="rtl"] {
+  background-color:#e0f7fa;
+  padding:10px;
+  border-radius:8px;
+  color:#004d40;
+}
+
+/* Image styling */
+img {
+  display:block;
+  margin:20px auto;
+  border-radius:12px;
+  box-shadow:0px 4px 10px rgba(0,0,0,0.2);
+}
+
+mark {
+  background-color:#ffeb3b;
+  color:#000;
+}
+
+ins {
+  color:#00796b;
+}
+
+del {
+  color:red;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<h1 id="myHeader">Welcome to TechNova Solutions</h1>
+<h3 style="text-align:center;">Innovating Tomorrow’s Technology</h3>
+
+<!-- LOGO -->
+<img src="image.png" height="200px" width="200px" alt="Company Logo">
+
+<!-- INTRO -->
+<p><strong>TechNova Solutions</strong> is a global software development company based in Pakistan. 
+We specialize in <mark>AI-driven apps</mark>, <mark>cloud solutions</mark>, and <mark>enterprise software</mark> for global clients.</p>
+
+<!-- EMPHASIS & SUP/SUB -->
+<h1><u>Our Vision</u></h1>
+<p>We aim to deliver quality and innovation in every product we build. 
+Our systems are designed with precision like <b>2<sup>3</sup>=8</b> — smart and powerful, yet simple.</p>
+<p>We handle both data and ideas fluidly — just like <b>H<sub>2</sub>O</b> balances elements perfectly.</p>
+
+<!-- TEAM SECTION -->
+<h2>Our Leadership</h2>
+<ul>
+  <li><b>M Umar Farooq</b> – CEO & Founder</li>
+  <li><b>Sir Nouman Shakir</b> – CTO</li>
+  <li><b>Junaid Mukhtar</b> – Project Manager</li>
+</ul>
+
+<!-- ABOUT -->
+<h2>About Us</h2>
+<p><em>TechNova Solutions</em> started its journey in 2020 with a passion to create digital excellence. 
+Our mission is to help businesses grow through innovation and technology.</p>
+
+<!-- OFFICES SECTION -->
+<h2>Our Offices</h2>
+<div class="mycontainer grid-container">
+  <div style="background-color:#FFF4A3;">
+    <h2>Lahore Branch</h2>
+    <p>Hub for Software Development and Cloud Integration.</p>
+  </div>
+  <div style="background-color:#A3FFF3;">
+    <h2>Islamabad Branch</h2>
+    <p>Focused on AI Research, Product Design, and Data Analytics.</p>
+  </div>
+  <div style="background-color:#D9EEE1;">
+    <h2>Karachi Branch</h2>
+    <p>Customer Success, Marketing, and Global Outreach Center.</p>
+  </div>
+</div>
+
+<!-- PROJECT CARDS -->
+<h2>Our Featured Projects</h2>
+<div class="city">
+  <h2>Smart Retail System</h2>
+  <p>An AI-powered POS and stock management system used by over 100+ stores.</p>
+</div>
+
+<div class="city">
+  <h2>EduNova LMS</h2>
+  <p>Online education platform offering virtual classrooms and analytics tools.</p>
+</div>
+
+<div class="city">
+  <h2>HealthCare Portal</h2>
+  <p>Digital solution connecting doctors and patients with smart scheduling.</p>
+</div>
+
+<!-- TABLE SECTION -->
+<h2>Meet Our Team</h2>
+<table style="width:100%;">
+  <caption>TechNova Team Members</caption>
+  <colgroup>
+    <col span="1" style="background-color:#E8EAF6;">
+  </colgroup>
+  <tr>
+    <th>Name</th>
+    <th>Role</th>
+    <th>Contact</th>
+  </tr>
+  <tr>
+    <td>Farooq</td>
+    <td>CEO</td>
+    <td>farooq@technova.com</td>
+  </tr>
+  <tr>
+    <td>Ali</td>
+    <td>CTO</td>
+    <td>ali@technova.com</td>
+  </tr>
+  <tr>
+    <td>Junaid</td>
+    <td>Manager</td>
+    <td>junaid@technova.com</td>
+  </tr>
+</table>
+
+<!-- CONTACT INFO -->
+<h2>Contact Us</h2>
+<p>Email: <a href="mailto:info@technova.com">info@technova.com</a></p>
+<p>Phone: +92 300 1234567</p>
+<p>Address: TechNova Solutions, GCUF Campus, Faisalabad, Pakistan</p>
+
+<!-- RIGHT-TO-LEFT POETRY -->
+<h2 dir="rtl">ٹیکنووا سلوشنز، ڈیجیٹل انقلاب کی قیادت کر رہا ہے۔</h2>
+<bdo dir="rtl">اسلامی جمہوریہ پاکستان - جدید ٹیکنالوجی کی نئی پہچان</bdo>
+
+<!-- FOOTER -->
+<h3 style="text-align:center; background-color:#0044cc; color:white; padding:20px; border-radius:10px;">
+&copy; 2025 TechNova Solutions | Designed by Farooq
+</h3>
+
+</body>
+</html>

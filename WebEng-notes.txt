@@ -1,0 +1,28 @@
+Flex box:
+
+it helps to automatically arrange items
+it aligns the items inside the items 
+it center items horizentaly and vertically 
+columns in it will have equal width
+space is distributed in elements
+we can reorder elements accourding to screeen
+
+ 
+its properties:
+
+	flex-direction: (it define column and rows of items)
+	justify-content: Align horizentally
+	Align-item: vertically align item
+	flex-wrap: allow items to move to next line if needed
+	flex: controls items growth
+	grid-template-column: it defines columns numbers and size
+	grid-template-rows: it defines rows numbers and size
+	grid-area: it defined rows and colums we can give name to this section . it auto aujust size
+	FR: size adjust 
+	
+Two dimentional layout:
+
+
+
+Create difference btw Grid Flex box and Layout ( 4 to 5 points)
+defination purpose features properties

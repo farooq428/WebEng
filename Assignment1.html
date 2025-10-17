@@ -1,188 +1,272 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Beautiful Pakistan Page</title>
+
+<title>TechNova Solutions</title>
 
 <style>
-/* Header */
-#myHeader {
-  background-color: lightblue;
-  color: black;
-  padding: 40px;
-  text-align: center;
-  border-radius: 8px;
-}
+  
+  /* ---------- BODY ---------- */
+  body {
+    background-color: #f3f6fa;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
 
-/* Table Styling */
-table, th, td {
-  border: 1px solid black;
-  border-radius: 8px;
-  padding: 8px;
-  border-collapse: collapse;
-  text-align: center;
-}
+  /* ---------- MAIN CONTAINER ---------- */
+  .content-wrapper {
+    max-width: 1100px; /* You can adjust width */
+    margin: 0 auto; /* Centers all content */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
 
-/* Grid layout for cities */
-.grid-container {
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  gap: 10px;
-  padding: 10px;
-}
+  /* ---------- TABLE ---------- */
+  table, th, td {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 8px;
+    border-collapse: collapse;
+    width: 100%;
+  }
 
-/* City Card */
-.city {
-  background-color: tomato;
-  color: white;
-  border: 2px solid black;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 20px;
-  text-align: center;
-}
+  /* ---------- GRID ---------- */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+  }
 
-/* General Div Layout */
-div.mycontainer {
-  width:100%;
-  overflow:auto;
-}
+  /* ---------- BRANCH BOX ---------- */
+  .branch-box {
+    background-color: #f4f9ff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
 
-div.mycontainer div {
-  width:33%;  
-  float:left;
-  padding :10px;
-  border-radius: 8px;
-  border: 1px solid black;
-}
+  /* ---------- CITY PROJECT CARDS ---------- */
+  .city {
+    background-color: #0066cc;
+    color: #fff;
+    border: 2px solid #003366;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
 
-/* Page body styling */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f6f8;
-  margin: 0;
-  padding: 0;
-}
+  .city p {
+    color: #E8EAF6;
+  }
 
-/* Center images */
-img {
-  display: block;
-  margin: 0 auto;
-  border-radius: 8px;
-}
+  /* ---------- HEADER ---------- */
+  #myHeader {
+    background-color: #0044cc;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+  }
 
-/* Links */
-a {
-  color: blue;
-  text-decoration: none;
-  font-weight: bold;
-}
-a:hover {
-  color: red;
-}
+  /* ---------- LINKS ---------- */
+  a {
+    color: #0044cc;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: #ff6600;
+  }
+
+  /* ---------- LIST ---------- */
+  ul {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    margin: 20px 0;
+  }
+
+  /* ---------- IMAGE ---------- */
+  img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+  }
+
+  /* ---------- BUTTONS ---------- */
+  .btn {
+    display: inline-block;
+    background-color: #0044cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    transition: 0.3s;
+    margin: 10px 5px;
+  }
+
+  .btn:hover {
+    background-color: #ff6600;
+    transform: scale(1.05);
+  }
+
+  .btn-outline {
+    background-color: transparent;
+    color: #0044cc;
+    border: 2px solid #0044cc;
+  }
+
+  .btn-outline:hover {
+    background-color: #0044cc;
+    color: white;
+  }
+
+  .btn-group {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer {
+    text-align: center;
+    background-color: #0044cc;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+  }
+
 </style>
 </head>
 
 <body>
 
-<!-- Header -->
-<h1 id="myHeader">Welcome to My Beautiful Pakistan 🌸</h1>
+<div class="content-wrapper">
 
-<!-- Intro Section -->
-<div style="background-color: white; margin: 20px; padding: 20px; border-radius: 10px;">
-  <img src="photo.png" height="200" width="200" alt="Pakistan Flag">
-  <h2><em>I Love My Pakistan</em></h2>
-  <p><strong>Pakistan</strong> is full of beauty and culture. I like all cities of my country. Let’s explore them below.</p>
-  <a href="https://youtube.com">Watch Pakistan on YouTube</a>
-</div>
+  <!-- HEADER -->
+  <h1 id="myHeader">Welcome to TechNova Solutions</h1>
+  <h3 style="text-align:center;">Innovating Tomorrow’s Technology</h3>
 
-<!-- Famous Personalities -->
-<div class="mycontainer">
-  <div style="background-color: #FFF4A3;">
-    <h2>SIR NOUMAN SHAKIR</h2>
-    <p><mark>Web Engineering Mentor</mark></p>
-  </div>
-  <div style="background-color: #A3FFF3;">
-    <h2>M Umar Farooq</h2>
-    <p><i>Software Engineer</i></p>
-  </div>
-  <div style="background-color: #D9EEE1;">
-    <h2>JUNAID MUKHTAR</h2>
-    <p>Chak No 41/12-L, Chichawatni, Sahiwal</p>
-  </div>
-</div>
+  <!-- LOGO -->
+  <img src="image.png" height="200px" width="200px" alt="Company Logo">
 
-<!-- City Highlights -->
-<h2 style="text-align:center;">Major Cities of Pakistan</h2>
-<div class="grid-container">
-  <div class="city">
-    <h2>Faisalabad</h2>
-    <p>Known as the Manchester of Pakistan.</p>
-  </div>
+  <!-- INTRO -->
+  <p><strong>TechNova Solutions</strong> is a global software development company based in Pakistan. 
+  We specialize in <mark>AI-driven apps</mark>, <mark>cloud solutions</mark>, and <mark>enterprise software</mark> for global clients.</p>
 
-  <div class="city">
-    <h2>Lahore</h2>
-    <p>The heart of Pakistan, full of culture and life.</p>
-  </div>
+  <!-- VISION -->
+  <h1><u>Our Vision</u></h1>
+  <p>We aim to deliver quality and innovation in every product we build. 
+  Our systems are designed with precision like <b>2<sup>3</sup>=8</b> — smart and powerful, yet simple.</p>
+  <p>We handle both data and ideas fluidly — just like <b>H<sub>2</sub>O</b> balances elements perfectly.</p>
 
-  <div class="city">
-    <h2>Karachi</h2>
-    <p>The city of lights and economic hub.</p>
-  </div>
-</div>
-
-<!-- Table Section -->
-<h2 style="text-align:center;">Honda Sales Data</h2>
-<table style="width: 90%; margin: auto;">
-  <caption><b>Company Records</b></caption>
-  <colgroup>
-    <col span="1" style="background-color: #A3FFF3;">
-  </colgroup>
-  <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>City</th>
-  </tr>
-  <tr>
-    <td>GCUF</td>
-    <td>ABC</td>
-    <td>FSD</td>
-  </tr>
-  <tr>
-    <td>E-Com</td>
-    <td>XYZ</td>
-    <td>Lahore</td>
-  </tr>
-</table>
-
-<!-- Lists Section -->
-<div style="background-color:white; margin:20px; padding:20px; border-radius:10px;">
-  <h2>Neighboring Countries</h2>
+  <!-- LEADERSHIP -->
+  <h2>Our Leadership</h2>
   <ul>
-    <li>Pakistan</li>
-    <li>India</li>
-    <li>Nepal</li>
-    <li>Sri Lanka</li>
-    <li>Oman</li>
+    <li><b>M Umar Farooq</b> – CEO & Founder</li>
+    <li><b>Sir Nouman Shakir</b> – CTO</li>
+    <li><b>Junaid Mukhtar</b> – Project Manager</li>
   </ul>
 
-  <h2>Top 4 Programming Languages</h2>
-  <ol>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>Python</li>
-  </ol>
+  <!-- ABOUT -->
+  <h2>About Us</h2>
+  <p>TechNova Solutions started its journey in 2020 with a passion to create digital excellence. 
+  Our mission is to help businesses grow through innovation and technology.</p>
+
+  <!-- OFFICES SECTION -->
+  <h2>Our Offices</h2>
+  <div class="grid-container">
+    <div class="branch-box">
+      <h2>Lahore Branch</h2>
+      <p>Hub for Software Development and Cloud Integration.</p>
+      <button class="btn-outline">Visit</button>
+    </div>
+    <div class="branch-box">
+      <h2>Islamabad Branch</h2>
+      <p>Focused on AI Research, Product Design, and Data Analytics.</p>
+      <button class="btn-outline">Visit</button>
+    </div>
+    <div class="branch-box">
+      <h2>Karachi Branch</h2>
+      <p>Customer Success, Marketing, and Global Outreach Center.</p>
+      <button class="btn-outline">Visit</button>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <h2>Our Featured Projects</h2>
+  <div class="city">
+    <h2>Smart Retail System</h2>
+    <p>An AI-powered POS and stock management system used by over 100+ stores.</p>
+    <button class="btn">View Project</button>
+  </div>
+
+  <div class="city">
+    <h2>EduNova LMS</h2>
+    <p>Online education platform offering virtual classrooms and analytics tools.</p>
+    <button class="btn">View Project</button>
+  </div>
+
+  <div class="city">
+    <h2>HealthCare Portal</h2>
+    <p>Digital solution connecting doctors and patients with smart scheduling.</p>
+    <button class="btn">View Project</button>
+  </div>
+
+  <!-- TEAM TABLE -->
+  <h2>Meet Our Team</h2>
+  <table>
+    <caption>TechNova Team Members</caption>
+    <tr>
+      <th>Name</th>
+      <th>Role</th>
+      <th>Contact</th>
+    </tr>
+    <tr>
+      <td>Farooq</td>
+      <td>CEO</td>
+      <td>farooq@technova.com</td>
+    </tr>
+    <tr>
+      <td>Ali</td>
+      <td>CTO</td>
+      <td>ali@technova.com</td>
+    </tr>
+    <tr>
+      <td>Junaid</td>
+      <td>Manager</td>
+      <td>junaid@technova.com</td>
+    </tr>
+  </table>
+
+  <!-- CONTACT INFO -->
+  <h2>Contact Us</h2>
+  <p>Email: <a href="mailto:info@technova.com">info@technova.com</a></p>
+  <p>Phone: +92 300 1234567</p>
+  <p>Address: TechNova Solutions, GCUF Campus, Faisalabad, Pakistan</p>
+
+  <!-- RTL POETRY -->
+  <h2 dir="rtl">ٹیکنووا سلوشنز، ڈیجیٹل انقلاب کی قیادت کر رہا ہے۔</h2>
+  <bdo dir="rtl">اسلامی جمہوریہ پاکستان - جدید ٹیکنالوجی کی نئی پہچان</bdo>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2025 TechNova Solutions | Designed by Farooq
+  </footer>
+
 </div>
-
-<!-- Footer Quote -->
-<h2 dir="rtl" style="text-align:center; margin:20px;">
-دنیا کی محفلوں سے اکتا گیا ہوں یا رب 
-کیا لطف انجمن کا جب دل ہی بجھ گیا ہو
-</h2>
-
-<h3 style="text-align:center;">Designed by <u>M Umar Farooq</u> | <ins>Code with Love ❤️</ins></h3>
 
 </body>
 </html>

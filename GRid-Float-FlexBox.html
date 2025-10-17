@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid vs Flexbox vs Float Example</title>
+<style>
+    body {
+        
+        background-color: #f0f4f8;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h2 {
+        color: #1e3a8a;
+        border-bottom: 2px solid #1e3a8a;
+        padding-bottom: 5px;
+    }
+
+    .box {
+        background-color: #3b82f6;
+        color: white;
+        padding: 20px;
+        font-size: 18px;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    /* ----- 1. FLOAT EXAMPLE ----- */
+    .float-container {
+        border: 2px solid #1e3a8a;
+        padding: 10px;
+        overflow: hidden; /* clears floats */
+        margin-bottom: 30px;
+        background-color: white;
+    }
+
+    .float-box {
+        width: 30%;
+        float: left;
+        margin: 1.5%;
+    }
+
+    /* ----- 2. FLEXBOX EXAMPLE ----- */
+    .flex-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 2px solid #1e3a8a;
+        padding: 10px;
+        margin-bottom: 30px;
+        background-color: white;
+    }
+
+    .flex-box {
+        width: 25%;
+    }
+
+    /* ----- 3. GRID EXAMPLE ----- */
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        border: 2px solid #1e3a8a;
+        padding: 10px;
+        background-color: white;
+    }
+</style>
+</head>
+<body>
+
+    <h1>Grid vs Flexbox vs Float Example</h1>
+
+    <!-- FLOAT -->
+    <h2>1️⃣ Float Layout</h2>
+    <div class="float-container">
+        <div class="box float-box">Box 1</div>
+        <div class="box float-box">Box 2</div>
+        <div class="box float-box">Box 3</div>
+    </div>
+
+    <!-- FLEXBOX -->
+    <h2>2️⃣ Flexbox Layout</h2>
+    <div class="flex-container">
+        <div class="box flex-box">Box 1</div>
+        <div class="box flex-box">Box 2</div>
+        <div class="box flex-box">Box 3</div>
+    </div>
+
+    <!-- GRID -->
+    <h2>3️⃣ Grid Layout</h2>
+    <div class="grid-container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+
+</body>
+</html>

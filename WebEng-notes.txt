@@ -59,3 +59,34 @@ post method: append the form data inside the body of http request . no size limi
 
 
 	 is a free framwork of html css and javascript to build user friendly pages easily
+
+	 ///explain every word in the links of Boootstrap////
+
+	 jquery : js libray 
+
+	 slim : smaller version of jquery
+
+
+
+
+popper.js : a library
+
+💡 What is Popper.js?
+
+Popper.js is a small JavaScript library used to position elements like:
+
+tooltips 🗨️
+
+dropdown menus 🔽
+
+popovers 💬
+
+floating elements 🎯
+
+It helps make these elements appear in the correct place on the screen, even when the page is scrolled or resized.
+
+
+
+///
+
+AJAX : you can send data without loading the page 

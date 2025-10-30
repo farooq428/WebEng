@@ -26,3 +26,36 @@ Two dimentional layout:
 
 Create difference btw Grid Flex box and Layout ( 4 to 5 points)
 defination purpose features properties
+
+
+---
+
+URL:
+
+HTTP:/www.xyz.com/path/filename
+
+HTTP : scheme -> define the type of internet service (http or https) for http 
+www: prefix -> is a text that apears before the main domain name in a website adress also called sub domain
+xyz: domain name 
+port number : number of hosted port.
+
+
+====
+
+Form 
+<Form> it self is not visible . it starting point of form
+it is used to collect the user input 
+ Label : display many forms elemnts 
+ for fname : it is ID basically is used to links the lable two the input box it is used when sending the 	data 
+ send to the server on page page.php for processing
+
+get method : append the form data to URL in name or value its character limit is 2048 . 
+
+post method: append the form data inside the body of http request . no size limit
+
+
+
+     Boootstrap 
+
+
+	 is a free framwork of html css and javascript to build user friendly pages easily

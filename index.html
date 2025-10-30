@@ -1,240 +1,342 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Code File</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First Code File</title>
 
-    <style>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-radius: 8px;
+      padding: 2px;
+      border-collapse: collapse;
+    }
 
-table, th, td {
-  border: 1px solid black;
-  border-radius: 8px;
-  padding: 2px;
-  border-collapse: collapse;
-}
+    div.mycontainer {
+      width: 100%;
+      overflow: auto;
+    }
 
-        div.mycontainer {
-  width:100%;
-  overflow:auto;
-}
-div.mycontainer div {   /*  select all divs inside container */
-  width:33%;  
-  float:left;
-  grid-column: auto;
-  padding :10px;
-}
+    div.mycontainer div {
+      /*  select all divs inside container */
+      width: 33%;
+      float: left;
+      grid-column: auto;
+      padding: 10px;
+    }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-}
+    .grid-container {
+      display: grid;
+      grid-template-columns: 30% 30% 30%;
+    }
 
-.city {
-  background-color: tomato;
-  color: white;
-  border: 2px solid black;
-  margin: 20px;
-  padding: 20px;
-}
-
-
-   #myHeader {
-  background-color: lightblue;
-  color: black;
-  padding: 40px;
-  text-align: center;
-} 
+    .city {
+      background-color: tomato;
+      color: white;
+      border: 2px solid black;
+      margin: 20px;
+      padding: 20px;
+    }
 
 
-       /* flex box */
-           
+    #myHeader {
+      background-color: lightblue;
+      color: black;
+      padding: 40px;
+      text-align: center;
+    }
 
-    </style>
+
+    /* flex box */
+  </style>
 </head>
+
 <body>
-    <a href="https://youtube.com"> YOUTUBE LINK</a>
-    <img src="photo.png" height="200 px"    width="200 px" alt="COLOR">
-    <h3>I love my Pakistan . I like my pakistan .<br> I love all cities of Pakistan</h3>
-        <h1>SIR NOUMAN SHAKIR</h1>
-        <h2>SIR NOUMAN SHAKIR</h2>
-        <h3>SIR NOUMAN SHAKIR</h3>
-       <strong>SIR G AP KASY HA </strong>
-        <h1><b>M Umar Farooq</b></h1>
-        <h1><i>M Umar Farooq</i></h1>
-        <h2><mark>WEB ENG</mark></h2>
-        <p>THIS IS A PARAGRPAH <del> which is deleted </del></p>
-        <h1><u>M Umar Farooq</u></h1>
-        <ins>HEY BROS  </ins>
-         <h2> <span>Farooq GCUF </span></h2>
-        <h2><em>ASSALAM O ALAIKUM</em></h2>
-        <h1><p>2<sup>3</sup>=8</p></h1>
-        <h1>H<sub>2</sub>O</h1>
-        <h1>Address</h1>
-        <h1 dir="rtl"> دنیا کی محفلوں سے اکتا گیا ہوں یا رب 
-کیا لطف انجمن کا جب دل ہی بجھ گیا ہو</h1>
-        <h2>JUNAID MUKHTAR</h2>
-        <h3>HOUSE NO: Chak No 41/12-L,CHICHAWATNI,SAHIWAL</h3>
-        <br>
-         <a href="junaidmukhtar@gmail.com"> Visit my web</a> <br>
-         <h2>Mobile NO : 03274338356</h2>
-         <br>
-         <!-- <bdo dir="rtl  ">ی محفلوں سے اکتا گیا ہوں یا رب کیا لطف انجمن کا جب دل ہی بجھ گیا ہو</bdo> -->
-         <bdo dir="rtl">اسلامی جمہوریہ پاكستان</bdo>
-         <h1 style="background-color: aqua; color: brown;">SOFTWARE ENGINEER</h1>
-         <h1 style="background-color: rgb(255, 136, 0); color: rgb(124, 42, 165);">COMPUTER SCIENCE</h1>
-         <h1 style="background-color: rgb(255, 0, 0); color: rgb(42, 165, 42);">INFO TECH </h1>
-         <h1 style="background-color: black; color: white;">GC UNIVERSITY </h1>
-         <ul>
-            <li>Pakistan</li>
-            <li>India </li>
-            <li>Nepal</li>
-            <li>Sri Lanka </li>
-            <li>Oman </li>
-         </ul>
+  <a href="https://youtube.com"> YOUTUBE LINK</a>
+  <img src="photo.png" height="200 px" width="200 px" alt="COLOR">
+  <h3>I love my Pakistan . I like my pakistan .<br> I love all cities of Pakistan</h3>
+  <h1>SIR NOUMAN SHAKIR</h1>
+  <h2>SIR NOUMAN SHAKIR</h2>
+  <h3>SIR NOUMAN SHAKIR</h3>
+  <strong>SIR G AP KASY HA </strong>
+  <h1><b>M Umar Farooq</b></h1>
+  <h1><i>M Umar Farooq</i></h1>
+  <h2><mark>WEB ENG</mark></h2>
+  <p>THIS IS A PARAGRPAH <del> which is deleted </del></p>
+  <h1><u>M Umar Farooq</u></h1>
+  <ins>HEY BROS </ins>
+  <h2> <span>Farooq GCUF </span></h2>
+  <h2><em>ASSALAM O ALAIKUM</em></h2>
+  <h1>
+    <p>2<sup>3</sup>=8</p>
+  </h1>
+  <h1>H<sub>2</sub>O</h1>
+  <h1>Address</h1>
+  <h1 dir="rtl"> دنیا کی محفلوں سے اکتا گیا ہوں یا رب
+    کیا لطف انجمن کا جب دل ہی بجھ گیا ہو</h1>
+  <h2>JUNAID MUKHTAR</h2>
+  <h3>HOUSE NO: Chak No 41/12-L,CHICHAWATNI,SAHIWAL</h3>
+  <br>
+  <a href="junaidmukhtar@gmail.com"> Visit my web</a> <br>
+  <h2>Mobile NO : 03274338356</h2>
+  <br>
+  <!-- <bdo dir="rtl  ">ی محفلوں سے اکتا گیا ہوں یا رب کیا لطف انجمن کا جب دل ہی بجھ گیا ہو</bdo> -->
+  <bdo dir="rtl">اسلامی جمہوریہ پاكستان</bdo>
+  <h1 style="background-color: aqua; color: brown;">SOFTWARE ENGINEER</h1>
+  <h1 style="background-color: rgb(255, 136, 0); color: rgb(124, 42, 165);">COMPUTER SCIENCE</h1>
+  <h1 style="background-color: rgb(255, 0, 0); color: rgb(42, 165, 42);">INFO TECH </h1>
+  <h1 style="background-color: black; color: white;">GC UNIVERSITY </h1>
+  <ul>
+    <li>Pakistan</li>
+    <li>India </li>
+    <li>Nepal</li>
+    <li>Sri Lanka </li>
+    <li>Oman </li>
+  </ul>
 
 
 
-         <div>  
-        <p>div stands for division : it is block level container element use to group together of an other HTML elements . it organize the content in sections also controls layouts</p>
+  <div>
+    <p>div stands for division : it is block level container element use to group together of an other HTML elements .
+      it organize the content in sections also controls layouts</p>
 
-         </div>
+  </div>
 
-         <h1>Multiple div elements</h1>
-<div style="background-color: blue;">
-    
-        <p>Punjab has 6 million people Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia dolore dolorem accusamus!</p>
-    
-</div>
+  <h1>Multiple div elements</h1>
+  <div style="background-color: blue;">
 
-<div style="background-color: green;">
+    <p>Punjab has 6 million people Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia dolore dolorem
+      accusamus!</p>
+
+  </div>
+
+  <div style="background-color: green;">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis consequuntur nemo at ad praesentium.</p>
 
-</div>
+  </div>
 
-<div style="background-color: yellow;">
+  <div style="background-color: yellow;">
     <h1>LHR</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores corrupti repudiandae odio quo odit hic maiores inventore earum, rerum maxime? Reprehenderit, quaerat maxime quidem accusantium vel ipsa illo repellendus esse.</p>
-</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores corrupti repudiandae odio quo odit hic maiores
+      inventore earum, rerum maxime? Reprehenderit, quaerat maxime quidem accusantium vel ipsa illo repellendus esse.
+    </p>
+  </div>
 
-<div style="background-color: yellow;">
+        <div style="background-color: yellow;">
     <h1>Jhang</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores corrupti repudiandae odio quo odit hic maiores inventore earum, rerum maxime? Reprehenderit, quaerat maxime quidem accusantium vel ipsa illo repellendus esse.</p>
-</div>
-<div style="background-color: rgb(40, 14, 187);">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores corrupti repudiandae odio quo odit hic maiores
+      inventore earum, rerum maxime? Reprehenderit, quaerat maxime quidem accusantium vel ipsa illo repellendus esse.
+    </p>
+  </div>
+  <div style="background-color: rgb(40, 14, 187);">
     <h1>Multan</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores corrupti repudiandae odio quo odit hic maiores inventore earum, rerum maxime? Reprehenderit, quaerat maxime quidem accusantium vel ipsa illo repellendus esse.</p>
-</div><div style="background-color: rgb(233, 34, 127);">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores corrupti repudiandae odio quo odit hic maiores
+      inventore earum, rerum maxime? Reprehenderit, quaerat maxime quidem accusantium vel ipsa illo repellendus esse.
+    </p>
+  </div>
+  <div style="background-color: rgb(233, 34, 127);">
     <h1>Faisalabad</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores corrupti repudiandae odio quo odit hic maiores inventore earum, rerum maxime? Reprehenderit, quaerat maxime quidem accusantium vel ipsa illo repellendus esse.</p>
-</div>
-
-
-     
-
-
-<div class="mycontainer grid-container">
-
-  <div style="background-color:#FFF4A3;">
-    <h2>Punjab</h2>
-    <p> Punjab is the capital city of ISB.</p>
-    <p>Punjab has over 6 million inhabitants.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores corrupti repudiandae odio quo odit hic maiores
+      inventore earum, rerum maxime? Reprehenderit, quaerat maxime quidem accusantium vel ipsa illo repellendus esse.
+    </p>
   </div>
-  
-  <div LHR style="background-color:#A3FFF3;">
-    <p>Karachi is the capital city of FSD.</p>
-    <p>Karachi has over 8 million inhabitant.</p>
+
+
+
+
+
+  <div class="mycontainer grid-container">
+
+    <div style="background-color:#FFF4A3;">
+      <h2>Punjab</h2>
+      <p> Punjab is the capital city of ISB.</p>
+      <p>Punjab has over 6 million inhabitants.</p>
+    </div>
+
+    <div LHR style="background-color:#A3FFF3;">
+      <p>Karachi is the capital city of FSD.</p>
+      <p>Karachi has over 8 million inhabitant.</p>
+    </div>
+
+      <div style="background-color:#D9EEE1;">
+        <h2>Karachi</h2>
+        <p>Rome is the capital city of Italy.</p>
+        <p>Karachi has over 8 million inhabitants.</p>
+      </div>
+
+
+
   </div>
-  
-  <div style="background-color:#D9EEE1;">
+
+
+  <div class="city">
+    <h2>FSD</h2>
+    <p>FSD is the capital of LHR.</p>
+  </div>
+
+  <div class="city">
+    <h2>ISB</h2>
+    <p>ISB is the capital of FSD.</p>
+  </div>
+
+  <div class="city">
     <h2>Karachi</h2>
-    <p>Rome is the capital city of Italy.</p>
-    <p>Karachi has over 8 million inhabitants.</p>
+    <p>Karachi is the capital of LHR.</p>
   </div>
 
 
-      
-</div>
+  <h2>The id Attribute</h2>
+  <p>Use CSS to style an element with the id "myHeader":</p>
 
+  <h1 id="myHeader">My Header</h1>
+  <p>My header is styled with CSS.</p>
 
-<div class="city">    
-<h2>FSD</h2>
-<p>FSD is the capital of LHR.</p>
-</div> 
+  <ul>
+    <h1>Unordered list</h1> <!-- (it appears with bulets by diffaults) -->
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+    <li>item 4</li>
+    <li>item 4</li>
+    <li>item 4</li>
+  </ul>
 
-<div class="city">
-<h2>ISB</h2>
-<p>ISB is the capital of FSD.</p>
-</div>
+  <ol>
+    <h1>Ordered lists</h1>
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+    <li>item 4</li>
+  </ol>
 
-<div class="city">
-<h2>Karachi</h2>
-<p>Karachi is the capital of LHR.</p>
-</div>
-
-
-<h2>The id Attribute</h2>
-<p>Use CSS to style an element with the id "myHeader":</p>
-
-<h1 id="myHeader">My Header</h1>
-<p>My header is styled with CSS.</p>
-
-     <ul> <h1>Unordered list</h1> <!-- (it appears with bulets by diffaults) -->
-      <li>item 1</li> 
-      <li>item 2</li> 
-      <li>item 3</li> 
-      <li>item 4</li> 
-      <li>item 4</li> 
-      <li>item 4</li> 
-    </ul>
-
-    <ol> <h1>Ordered lists</h1>
-        <li>item 1</li>
-        <li>item 2</li>
-        <li>item 3</li>
-        <li>item 4</li>
-    </ol>
-
-    <dl>
-      <!-- description list : items are marked with dt and dd tags -->
-    </dl>
-    <dd>
-        <!-- defination description tag : it is use inside a description list  -->  
-    <dt>
-        <!-- defination term tag : it is use inside a description list  -->
-    </dt>
-
-
-    
-<h2>A basic HTML table</h2>
-
-<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
-  <caption>Honda Sales</caption>
-  <colgroup>
-    <col span="1" style="background-color: blue;">
-  </colgroup>
-  <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
-  </tr>
-  <tr>
-    <td>GCUF</td>
-    <td>ABC</td>
-    <td>FSD</td>
-  </tr>
-  <tr>
-    <td>E-Com</td>
-    <td>XYZ</td>
-    <td>Lahore</td>
-  </tr>
-</table>
-
-<p>To understand the example better, we have added borders to the table.</p>
+  <dl>
+    <!-- description list : items are marked with dt and dd tags -->
+  </dl>
+  <dd>
+    <!-- defination description tag : it is use inside a description list  -->
+  <dt>
+    <!-- defination term tag : it is use inside a description list  -->
+  </dt>
 
 
 
-       <!-- flex box -->
+  <h2>A basic HTML table</h2>
+
+  <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
+    <caption>Honda Sales</caption>
+    <colgroup>
+      <col span="1" style="background-color: blue;">
+    </colgroup>
+    <tr>
+      <th>Company</th>
+      <th>Contact</th>
+      <th>Country</th>
+    </tr>
+    <tr>
+      <td>GCUF</td>
+      <td>ABC</td>
+      <td>FSD</td>
+    </tr>
+    <tr>
+      <td>E-Com</td>
+      <td>XYZ</td>
+      <td>Lahore</td>
+    </tr>
+  </table>
+
+  <p>To understand the example better, we have added borders to the table.</p>
+
+
+
+  <!-- flex box -->
+
+
+
+  <!-- form -->
+
+
+  <h2>Registration Form</h2>
+
+  <form method="get">
+
+    <!-- Personal Info -->
+    <h3>Personal Information</h3>
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="fname" placeholder="Enter your name"><br><br>
+
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lname" placeholder="Enter last name"><br><br>
+
+    <label for="age">Your Age</label>
+    <input type="number" id="age" name="age" placeholder="123"><br><br>
+
+    <label for="DropDown">Choose an option:</label>
+    <select id="DropDown" name="DropDown">
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select>
+
+
+    <!-- Gender -->
+    <h3>Gender</h3>
+    <label for="male">
+      <input type="radio" id="male" name="gender" value="male"> Male
+    </label><br>
+
+    <label for="female">
+      <input type="radio" id="female" name="gender" value="female"> Female
+    </label><br>
+
+    <label for="other">
+      <input type="radio" id="other" name="gender" value="other"> Other
+    </label><br><br>
+
+    <!-- Skills -->
+    <h3>Skills</h3>
+    <label>
+      <input type="checkbox" name="skills" value="HTML"> HTML
+    </label><br>
+
+    <label>
+      <input type="checkbox" name="skills" value="CSS"> CSS
+    </label><br>
+
+    <label>
+      <input type="checkbox" name="skills" value="JavaScript"> JavaScript
+    </label><br>
+
+    <label>
+      <input type="checkbox" name="skills" value="React"> React
+    </label><br><br>
+
+    <!-- Text area -->
+    <h3>About You</h3>
+    <label for="txt-area">Your Message:</label><br>
+    <textarea id="txt-area" name="textarea" rows="4" cols="50"></textarea><br><br>
+
+    <!-- Submit -->
+    <h3>Submit Form</h3>
+    <input type="submit" value="Submit">
+
+  </form>
+
+  <p>Note that the form itself is not visible.</p>
+
+  <p>Also note that the default width of text input fields is 30 characters.</p>
+
+
+
+
+
+     <!-- Bootstrap -->
+
+
 
 </body>
+
 </html>
